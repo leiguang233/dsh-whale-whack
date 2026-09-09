@@ -29,7 +29,7 @@ dshpm install github:leiguang233/dsh-whale-whack --profile <name>
 1. 下载本仓库 zip 并解压，得到 `dsh-whale-whack` 目录
 2. 在 DSH 中执行：
    ```
-   plugin_install F:\绝对\路径\dsh-whale-whack
+   plugin_install <你的绝对路径>\dsh-whale-whack
    ```
 3. **重启 DSH web** 后生效
 
@@ -44,12 +44,7 @@ dshpm install github:leiguang233/dsh-whale-whack --profile <name>
 ## 🛠 开发
 
 - 编辑源模板：`lib/client-v8.js`（改这里）
-- 构建产物：`lib/client.js`（勿手改）
-- 构建命令：
-  ```bash
-  node F:/ds/dsh/whale-whack/audio/build-user-audio.js
-  ```
-  （v8 起构建 = 模板复制 + 自检，不再注入 base64）
+- 构建产物：`lib/client.js`（本仓库已内置，安装使用无需构建；改完模板后把改动同步到产物即可）
 - 素材在 `assets/`：视频 360×480 vp9 webm（黑底抠像）、音频 mp3、锤子 128px PNG、形象静态图
 
 ## 📄 许可
