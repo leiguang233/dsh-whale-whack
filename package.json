@@ -1,0 +1,28 @@
+{
+  "name": "dsh-whale-whack",
+  "description": "爆锤小肥鱼：什么！大肥鱼又在偷吃token了，快用爱的锤子感化她吧~ 自包含桌宠小游戏，冒头/打中/没打中全为本地素材。",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "author": "leiguang233 <leiguang233@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leiguang233/dsh-whale-whack.git"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

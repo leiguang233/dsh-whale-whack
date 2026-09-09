@@ -1,0 +1,21 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# DSH 本地 profile junction（若是仓库内建的链接）
+*.lnk
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 临时/系统
+Thumbs.db
+.DS_Store
+
+# 本地备份与开发杂项（若放进本仓库）
+backup/
+debug/

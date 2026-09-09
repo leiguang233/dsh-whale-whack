@@ -1,0 +1,11 @@
+# 统一 LF，避免 Windows CRLF 造成无意义 diff
+* text=auto
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.png binary
+*.jpg binary
+*.webm binary
+*.mp3 binary
+*.mp4 binary
