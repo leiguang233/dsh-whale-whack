@@ -19,19 +19,29 @@
 
 ## 📦 安装
 
-### 方式一：已装 DSH + 从 GitHub 安装
-```bash
-# 在你的 DSH 环境执行（profile 名按实际）
-dshpm install github:leiguang233/dsh-whale-whack --profile <name>
-```
+装完**重启 DSH**（或重启 DSH web）后生效。
 
-### 方式二：下载 zip 手动安装
-1. 下载本仓库 zip 并解压，得到 `dsh-whale-whack` 目录
-2. 在 DSH 中执行：
+### 方式一：交给 DSH 里的 AI 助手（最省事）
+直接把仓库地址发给你的 DSH 助手，例如说：
+
+> 从 https://github.com/leiguang233/dsh-whale-whack 安装这个插件
+
+助手会走官方受保护安装流程（自动检查依赖，失败会回滚），无需自己敲命令。
+
+### 方式二：命令行安装
+```bash
+# profile 名按你自己的实际填（常见为 web）
+dsh plugin --profile <你的profile> add github:leiguang233/dsh-whale-whack
+```
+> 该命令等价于在 profile 目录执行 `pnpm add github:leiguang233/dsh-whale-whack`。
+
+### 方式三：下载 zip 手动安装
+1. 在仓库页点绿色 `Code` → `Download ZIP`，解压得到 `dsh-whale-whack` 目录
+2. 把这个目录的**绝对路径**发给你的 DSH 助手，让它安装；或执行：
+   ```bash
+   dsh plugin --profile <你的profile> add <你的绝对路径>\dsh-whale-whack
    ```
-   plugin_install <你的绝对路径>\dsh-whale-whack
-   ```
-3. **重启 DSH web** 后生效
+3. 重启 DSH 后生效
 
 > 旧版本曾依赖 `dsh-dafeiyu` 提供散发静态图；**v0.2.0 起已完全自包含**，无需再装任何依赖。
 
