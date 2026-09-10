@@ -30,17 +30,18 @@
 
 ### 方式二：命令行安装
 ```bash
-# profile 名按你自己的实际填（常见为 web）
-dsh plugin --profile <你的profile> add github:leiguang233/dsh-whale-whack
+dsh plugin --profile web add github:leiguang233/dsh-whale-whack
 ```
-> 该命令等价于在 profile 目录执行 `pnpm add github:leiguang233/dsh-whale-whack`。
+> 该命令会把参数转发给 pnpm（等价于在 profile 目录执行 `pnpm add github:leiguang233/dsh-whale-whack`），成功后会把这个包自动加入 `dsh.profile.bundles`。
+> 如果你用的不是 `web` profile，把 `--profile web` 换成你自己的 profile 名即可。
 
 ### 方式三：下载 zip 手动安装
 1. 在仓库页点绿色 `Code` → `Download ZIP`，解压得到 `dsh-whale-whack` 目录
-2. 把这个目录的**绝对路径**发给你的 DSH 助手，让它安装；或执行：
+2. 执行（路径换成你解压后的实际位置）：
    ```bash
-   dsh plugin --profile <你的profile> add <你的绝对路径>\dsh-whale-whack
+   dsh plugin --profile web add link:D:\plugins\dsh-whale-whack
    ```
+   也可以直接把该目录的绝对路径发给你的 DSH 助手，让它安装。
 3. 重启 DSH 后生效
 
 > 旧版本曾依赖 `dsh-dafeiyu` 提供散发静态图；**v0.2.0 起已完全自包含**，无需再装任何依赖。
