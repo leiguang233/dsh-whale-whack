@@ -1,7 +1,7 @@
 {
   "name": "dsh-whale-whack",
-  "description": "爆锤小肥鱼：什么！大肥鱼又在偷吃token了，快用爱的锤子感化她吧~ 自包含桌宠小游戏，冒头/打中/没打中全为本地素材。",
-  "version": "0.2.0",
+  "description": "锤锤小肥鱼（DSH 插件版 · 已停止更新）：什么！大肥鱼又在偷吃token了，快用爱的锤子感化她吧~ 后续更新见桌面版 https://github.com/leiguang233/whale-whack-desktop",
+  "version": "0.2.2",
   "private": true,
   "type": "module",
   "main": "lib/index.js",
